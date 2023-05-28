@@ -1,6 +1,13 @@
 # igraph-san
 
-Setup notes:
+## Running
+
+```sh
+docker run --rm -ti ghcr.io/krlmlr/igraph-san:main RDcsan -q -e 'library(igraph)
+```
+
+
+## Setup notes
 
 - On <https://github.com/krlmlr/igraph-san/settings/actions>, set "Workflow permissions" to "Rread and write permissions"
 
