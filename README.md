@@ -3,7 +3,7 @@
 ## Running
 
 ```sh
-docker run --rm -ti ghcr.io/krlmlr/igraph-san:main RDcsan -q -e 'library(igraph)
+docker run --rm -ti ghcr.io/krlmlr/igraph-san:main RDcsan -q -e 'library(igraph)'
 ```
 
 ### Mounting a local igraph clone
