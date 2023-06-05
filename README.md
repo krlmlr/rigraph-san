@@ -3,13 +3,13 @@
 ## Running
 
 ```sh
-docker run --rm -ti --platform linux/amd64 ghcr.io/krlmlr/igraph-san:main RDcsan -q -e 'library(igraph)'
+docker run --rm -ti --platform linux/amd64 ghcr.io/krlmlr/rigraph-san:main RDcsan -q -e 'library(igraph)'
 ```
 
 ### Mounting a local igraph clone
 
 ```sh
-docker run --rm -ti --platform linux/amd64 -v $(pwd):/igraph ghcr.io/krlmlr/igraph-san:main RDsan -q -e 'setwd("igraph"); source("test.R")'
+docker run --rm -ti --platform linux/amd64 -v $(pwd):/igraph ghcr.io/krlmlr/rigraph-san:main RDsan -q -e 'setwd("igraph"); source("test.R")'
 ```
 
 
