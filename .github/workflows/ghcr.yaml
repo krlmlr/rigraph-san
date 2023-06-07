@@ -15,6 +15,7 @@ on:
       - main
   schedule:
     - cron: "0 1 * * *"
+  workflow_dispatch:
 
 env:
   REGISTRY: ghcr.io
