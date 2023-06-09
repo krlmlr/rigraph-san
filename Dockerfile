@@ -1,4 +1,4 @@
-FROM wch1/r-debug
+FROM ghcr.io/cynkra/r-debug:latest
 
 RUN RD -q -e 'pak::pak("igraph", dependencies = TRUE)'
 
