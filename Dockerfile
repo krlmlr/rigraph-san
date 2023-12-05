@@ -2,6 +2,8 @@ FROM ghcr.io/cynkra/r-debug:latest
 
 RUN apt-get install -y libglpk-dev libgmp-dev libarpack2-dev
 
+RUN true
+
 RUN RD -q -e 'pak::pak("igraph", dependencies = TRUE)'
 
 RUN RDvalgrind -q -e 'pak::pak("igraph", dependencies = TRUE)'
