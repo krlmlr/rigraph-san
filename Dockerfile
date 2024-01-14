@@ -1,4 +1,4 @@
-FROM ghcr.io/cynkra/r-debug:latest
+FROM ghcr.io/cynkra/r-debug:main
 
 RUN apt-get install -y libglpk-dev libgmp-dev libarpack2-dev
 
