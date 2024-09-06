@@ -12,8 +12,6 @@ RUN RDsan -q -e 'pak::pak("igraph/rigraph", dependencies = TRUE)'
 
 RUN RDcsan -q -e 'pak::pak("igraph/rigraph", dependencies = TRUE)'
 
-RUN RDstrictbarrier -q -e 'pak::pak("igraph/rigraph", dependencies = TRUE)'
-
 RUN RDthreadcheck -q -e 'pak::pak("igraph/rigraph", dependencies = TRUE)'
 
 # https://github.com/wch/r-debug/issues/27#issuecomment-1192654911
